@@ -51,36 +51,78 @@
               distinctio, modi sequi!
             </p>
             <div class="tab-titles">
-                <p class="tab-links active-link">Skills</p>
-                <p class="tab-links">Experience</p>
-                <p class="tab-links">Education</p>
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('projects')">Projects</p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
             </div>
-            <div class="tab-contents">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing Web/App interface</li>
-                    <li><span>WebDev</span><br>Developing Website/Webapp</li>
-                    <li><span>Backend Developement</span><br>Developing Server Side Code</li>
-                </ul>
-            </div>
-            <div class="tab-contents">
+            <div class="tab-contents active-tab" id="skills">
               <ul>
-                  <li><span>5 November 2023</span><br>Dad Jokes</li>
-                  <li><span>10 March - 6 Apr 2024</span><br>Google Clone</li>
-                  <li><span>5 June 2024</span><br>Funny Quote</li>
-                  <li><span>25 August - 7 September 2024</span><br>3d Shirt Customizer</li>
-                  <li><span>26 October - 7 November 2024</span><br>Sonic Game</li>
+                <li><span>UI/UX</span><br />Designing Web/App interface</li>
+                <li><span>WebDev</span><br />Developing Website/Webapp</li>
+                <li>
+                  <span>Backend Developement</span><br />Developing Server Side
+                  Code
+                </li>
               </ul>
-          </div>
-          <div class="tab-contents">
-            <ul>
-                <li><span>2016-18</span><br>St. Joseph's Convent School - Senior School</li>
-                <li><span>2018-21</span><br>Kumaun University - Graduation</li>
-                <li><span>2021-23</span><br>Kumaun University - Post-Graduation</li>
-            </ul>
-        </div>
+            </div>
+            <div class="tab-contents" id="projects">
+              <ul>
+                <li>
+                  <a
+                    href="https://google-clone-nextjs-project.vercel.app/"
+                    target="_blank"
+                    ><span>10 March - 6 Apr 2024</span><br />Google Clone</a
+                  >
+                </li>
+                <li>
+                  <a href="https://3d-web-five.vercel.app/" target="_blank">
+                    <span>25 August - 7 September 2024</span><br />3d Shirt
+                    Customizer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://sonic-game-eight.vercel.app/"
+                    target="_blank"
+                  >
+                    <span>26 October - 7 November 2024</span><br />Sonic Game</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2016-18</span><br />St. Joseph's Convent School - Senior
+                  School
+                </li>
+                <li>
+                  <span>2018-21</span><br />Kumaun University - Graduation
+                </li>
+                <li>
+                  <span>2021-23</span><br />Kumaun University - Post-Graduation
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+      function openTab(tabname) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
