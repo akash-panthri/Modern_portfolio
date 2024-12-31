@@ -254,13 +254,13 @@ nav ul li a:hover:after {
   text-align: center;
 }
 .work:hover img {
-  transform:scale(1.1) ;
+  transform: scale(1.1);
 }
 
-.work:hover .layer{
-height: 100%;
+.work:hover .layer {
+  height: 100%;
 }
-.btn{
+.btn {
   display: block;
   margin: 50px auto;
   width: fit-content;
@@ -271,30 +271,30 @@ height: 100%;
   color: #fff;
   transition: background 0.5s;
 }
-.btn:hover{
+.btn:hover {
   background: #ff004f;
 }
 
 /* --------------CONTACT-------------- */
-.contact-left{
+.contact-left {
   flex-basis: 35%;
 }
 
-.contact-right{
+.contact-right {
   flex-basis: 60%;
 }
-.contact-left p{
+.contact-left p {
   margin-top: 30px;
 }
-.contact-left p i{
+.contact-left p i {
   color: #ff004f;
   margin-right: 15px;
   font-size: 25px;
 }
-.social-icons{
+.social-icons {
   margin-top: 30px;
 }
-.social-icons a{
+.social-icons a {
   margin-right: 15px;
   font-size: 30px;
   text-decoration: none;
@@ -302,7 +302,11 @@ height: 100%;
   display: inline-block;
   transition: transform 0.5s;
 }
-.social-icons a:hover{
-color: #ff004f;
-transform: translateY(-5px);
+.social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: #ff004f;
 }
