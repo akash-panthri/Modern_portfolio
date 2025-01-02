@@ -345,6 +345,6 @@ form .btn2{
 /* --------------STYLE FOR SMALL SCREEN-------------- */
 @media only screen and (max-width:600px){
   #header{
-    background-image: url();
+    background-image: url(images/phone-background.png);
   }
 }
