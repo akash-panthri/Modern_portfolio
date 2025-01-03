@@ -310,10 +310,11 @@ nav ul li a:hover:after {
   display: inline-block;
   background: #ff004f;
 }
-.contact-right form{
+.contact-right form {
   width: 100%;
 }
-form input, form textarea{
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
@@ -325,14 +326,14 @@ form input, form textarea{
   border-radius: 6px;
 }
 
-form .btn2{
+form .btn2 {
   padding: 14px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
 }
 
-.copyright{
+.copyright {
   width: 100%;
   text-align: center;
   padding: 25px 0;
@@ -341,27 +342,26 @@ form .btn2{
   margin-top: 20px;
 }
 
-
 /* --------------STYLE FOR SMALL SCREEN-------------- */
-nav i{
+nav i {
   display: none;
 }
-@media only screen and (max-width:600px){
-  #header{
+@media only screen and (max-width: 600px) {
+  #header {
     background-image: url(images/phone-background.png);
   }
-  .header-text{
+  .header-text {
     margin-top: 100%;
     font-size: 16px;
   }
-  .header-text h1{
+  .header-text h1 {
     font-size: 30px;
   }
-  nav i{
+  nav i {
     display: block;
     font-size: 25px;
   }
-  nav ul{
+  nav ul {
     background: #ff004f;
     position: fixed;
     top: 0;
@@ -372,20 +372,37 @@ nav i{
     z-index: 2;
     transition: right 0.5s;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 25px;
   }
-  nav ul i{
+  nav ul i {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
-  .subtitle{
+  .subtitle {
     font-size: 40px;
   }
-  .about-col-1, .about-col-2{
+  .about-col-1,
+  .about-col-2 {
     flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  .tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
   }
 }
