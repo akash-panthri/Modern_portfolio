@@ -343,6 +343,9 @@ form .btn2{
 
 
 /* --------------STYLE FOR SMALL SCREEN-------------- */
+nav i{
+  display: none;
+}
 @media only screen and (max-width:600px){
   #header{
     background-image: url(images/phone-background.png);
@@ -353,5 +356,29 @@ form .btn2{
   }
   .header-text h1{
     font-size: 30px;
+  }
+  nav i{
+    display: block;
+    font-size: 25px;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul i{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
   }
 }
