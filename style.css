@@ -370,6 +370,7 @@ nav i{
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
+    transition: right 0.5s;
   }
   nav ul li{
     display: block;
@@ -380,5 +381,11 @@ nav i{
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+  .subtitle{
+    font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
   }
 }
