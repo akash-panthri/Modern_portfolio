@@ -226,7 +226,7 @@
             <a href="images/my-cv.pdf" download="Akash CV" class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
-            <form action="">
+            <form action="" name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
@@ -241,6 +241,7 @@
               ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
         <div class="copyright">
@@ -248,6 +249,31 @@
         </div>
       </div>
     </div>
+    <script>
+      const scriptURL = ''
+      const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(() => {
+              msg.innerHTML = ""
+              }, 5000)
+              form.reset()
+            
+            })
+          .catch(error => {
+            msg.innerHTML = "Some error occurred, please try again later"
+            msg.style.color = "red";
+            setTimeout(() => {
+              msg.innerHTML = ""
+              }, 5000)
+            console.error('Error!', error.message)})
+      })
+    </script>
     <script>
       var tabLinks = document.getElementsByClassName("tab-links");
       var tabContents = document.getElementsByClassName("tab-contents");

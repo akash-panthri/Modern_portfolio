@@ -344,6 +344,12 @@ form .btn2 {
   margin-top: 20px;
 }
 
+#msg{
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
+
 /* --------------STYLE FOR SMALL SCREEN-------------- */
 nav i {
   display: none !important;
