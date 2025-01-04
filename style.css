@@ -5,7 +5,9 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: #080808;
   color: #fff;
@@ -344,7 +346,7 @@ form .btn2 {
 
 /* --------------STYLE FOR SMALL SCREEN-------------- */
 nav i {
-  display: none;
+  display: none !important;
 }
 @media only screen and (max-width: 600px) {
   #header {
@@ -358,7 +360,7 @@ nav i {
     font-size: 30px;
   }
   nav i {
-    display: block;
+    display: block !important;
     font-size: 25px;
   }
   nav ul {
